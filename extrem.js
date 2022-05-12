@@ -46,4 +46,8 @@ global.testJsondata1ex = data
     //
     });
 }
-on()
+
+
+module.exports = {
+on
+}
