@@ -1,0 +1,384 @@
+{
+    "mongodb": {
+"url": "mongodb://127.0.0.1:27017?authSource=admin"
+    },
+    "bot": {
+        "token": "OTQwNjM1OTQwNDU4NzQ1OTE3.YgKRfA.Gp4pnQo65rlG_kPidHIOXTqDYrA",
+        "prefix": ".",
+        "owner": "883367093280595990",
+        "clientID": "940635940458745917",
+        "guardOwnerCheck": "false",
+        "roleSystem": {
+            "enabled": "true",
+            "channel": "966701313461198908",
+            "etkinliktakipcisi": {
+                "emoji": "🎮",
+                "label": "Etkinlik takipçisi",
+                "value": "etktakip",
+                "ID": "971050537342631986"
+            },
+            "nadireavcisi": {
+                "emoji": "🐉",
+                "label": "Nadire avcısı",
+                "value": "nadireavc",
+                "ID": "971050577859604540"
+            },
+            "rpoyuncusu": {
+                "emoji": "🎭",
+                "label": "Roleplay oyuncusu",
+                "value": "rpoyuncu",
+                "ID": "971050635975876619"
+            },
+            "odatasarimcisi": {
+                "emoji": "🏡",
+                "label": "Oda tasarımcısı",
+                "value": "mimar",
+                "ID": "971050677868584970"
+            },
+            "videotakipcisi": {
+                "emoji": "🎦",
+                "label": "Video takipçisi",
+                "value": "videotakip",
+                "ID": "971050721061535764"
+            }
+        },
+        "ticket": {
+            "action": "true",
+            "clientId": "940635940458745917",
+            "parentOpened": "966351075898720327",
+            "parentGlobal": "966351075898720327",
+            "parentHotel": "966351075898720327",
+            "parentDiscord": "966351075898720327",
+
+            "roleSupport": "946826861974011904",
+            "logsTicket": "966351120828088410",
+            "ticketChannel": "966351155401744414",
+            "footerText": "www.habnet.re"
+          }
+    },
+    "emoji": {
+        "check": "<:check:843106521331400708>",
+        "news": "<:news:843106411226595328>",
+        "typing": "<a:typing:843107273101672460>",
+        "xmark": "<:xmark:843107163189936178>",
+        "outage": "<:outage:843110621162897469>",
+        "guvenli": "<a:guvenli:946375665509363713>",
+        "warning": "<a:warning:946375666469847050>",
+        "alert": "<a:alert:946375665383510026>",
+        "onlinex": "<:online:843106411373264916>",
+        "offlinex": "<:dnd:843106521855688704>"
+    },
+    "guild": {
+        "mainGuild": {
+            "badlink": ["discord.app", ".st", ".re", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in", ".de", ".fr", ".it", ".com.br"],
+            "ID": "946826830722236507",
+            "registerSystem": {
+                "registerURL": "https://habnet.re/api/register/",
+                "pointLimit": 500
+            },
+            "levelSystem": {
+                "enabled": "true",
+                "forbiddencategory": ["966351075898720327"],
+                "forbiddenchannel": ["966351120828088410"],
+"25level": {
+    "role": "968242005039775825",
+    "xp": 19999.5
+},
+"50level": {
+    "role": "968242029786198037",
+    "xp": 48999.5
+},
+"100level": {
+    "role": "968242044713705553",
+    "xp": 87999.5
+}
+            },
+            "guard": {
+                "default": {
+                    "options": {
+"badword": "true",
+"link": "true",
+"ban": "true",
+"kick": "true",
+"roleCreate": "true",
+"roleDelete": "true",
+"roleUpdate": "true",
+"channelCreate": "true",
+"channelDelete": "true",
+"channelUpdate": "true",
+"emojiDelete": "true",
+"emojiUpdate": "true",
+"vanity": "true",
+"servername": "true",
+"botaccess": "true",
+"bancommand": "true",
+"kickcommand": "true",
+"timeoutcommand": "true"
+
+                    },
+                    "bot": {
+                        "badword": "false",
+                        "link": "false",
+                        "ban": "false",
+                        "kick": "false",
+                        "roleCreate": "false",
+                        "roleDelete": "false",
+                        "roleUpdate": "false",
+                        "channelCreate": "false",
+                        "channelDelete": "false",
+                        "channelUpdate": "false",
+                        "emojiDelete": "true",
+                        "emojiUpdate": "true",
+                        "vanity": "true",
+                        "servername": "true"
+                    },
+                    "value": {
+                        "badword": ["amk", "oç", "oc", "amina", "amına", "piç", "amına kodum", "amina kodum", "orospu", "orospu cocugu", "orospu çocuğu", "sikiş", "sikis", "sikiyim"],
+                        "link": ["habnet.re", "www.habnet.re", "https://habnet.re", "http://habnet.re", "discord.gg/habnet", "discord.com/invite/habnet"],
+                        "botaccess": [],
+                        "badwordlimit": {
+                            "type": "warning",
+                            "time": "0",
+                            "use": "0",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "linklimit": {
+                            "type": "warning",
+                            "time": "0",
+                            "use": "0",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "banlimit": {
+                            "type": "kick",
+                            "time": "10m",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "kicklimit": {
+                            "type": "kick",
+                            "time": "10m",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "roleCreatelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "1",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "roleDeletelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "1",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "roleUpdatelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "channelCreatelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "1",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "channelDeletelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "1",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "channelUpdatelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "emojiDeletelimit": {
+                            "type": "kick",
+                            "time": "0",
+                            "use": "0",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "emojiUpdatelimit": {
+                            "type": "kick",
+                            "time": "1d",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "vanitylimit": {
+                            "type": "kick",
+                            "time": "0",
+                            "use": "0",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "servernamelimit": {
+                            "type": "kick",
+                            "time": "0",
+                            "use": "0",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "bancommandlimit": {
+                            "type": "system",
+                            "time": "15m",
+                            "use": "3",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "kickcommandlimit": {
+                            "type": "system",
+                            "time": "15m",
+                            "use": "3",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        },
+                        "timeoutcommandlimit": {
+                            "type": "system",
+                            "time": "1m",
+                            "use": "5",
+                            "allow": {
+                                "user": [],
+                                "role": []
+                            }
+                        
+                        }
+
+                        }
+
+
+                }
+            },
+            "options": {
+                "banOldMessage": "0",
+                "permaJailTime": "999y",
+                "sayShowLog": "true",
+                "attachmentShowLog": "true",
+                "sayAndAttachmentShowLog": "true",
+                "registerDay": 2160000000,
+                "voiceAdvanted": "false"
+
+            },
+            "channels": {
+                "guardLog": "964149520269189121",
+                "RegisterAboutChannel": "",
+                "ModInfoChannel": "946849758625013800",
+                "JoinChannel": "946849736810451034",
+
+                "warnChannel": "946828404378972200",
+                "jailChannel": "946828441012011008",
+                
+                "setnickLog": "946849291731882044",
+
+                "registerLog": "946828476185468939",
+                "warnLog": "946848401784467526",
+                "jailLog": "946848463226802187",
+                "muteLog": "946848424727289976",
+                "kickLog": "946852160895844434",
+                "banLog": "946848439235412019",
+                "voiceLog": "946848439235412019",
+                "mainLog": "946849291731882044",
+
+                "eventLog": "946849291731882044",
+
+                "sayLog": "946851963415429190",
+                "attachmentLog": "946851963415429190",
+                "sayAndAttachmentLog": "946851963415429190",
+                "logger": {
+                    
+                    "guildBanAdd": "946849291731882044",
+                    "guildBanRemove": "946849291731882044",
+                    "guildMemberAdd": "946849291731882044",
+                    "guildMemberRemove": "946849291731882044",
+                    "guildMemberUpdate": "946849291731882044",
+                    "channelCreate": "946849291731882044",
+                    "channelDelete": "946849291731882044",
+                    "channelUpdate": "946849291731882044",
+                    "emojiCreate": "946849291731882044",
+                    "emojiDelete": "946849291731882044",
+                    "emojiUpdate": "946849291731882044",
+                    "messageDelete": "946849291731882044",
+                    "messageDeleteBulk": "946849291731882044",
+                    "messageUpdate": "946849291731882044",
+                    "roleCreate":  "946849291731882044",
+                    "roleDelete": "946849291731882044",
+                    "roleUpdate": "946849291731882044",
+                    "inviteCreate":"946849291731882044",
+                    "inviteDelete": "946849291731882044",
+                    "threadCreate": "946849291731882044",
+                    "threadDelete": "946849291731882044",
+                    "threadUpdate": "946849291731882044",
+                    "stickerCreate": "946849291731882044",
+                    "stickerDelete": "946849291731882044",
+                    "stickerUpdate": "946849291731882044",
+                    "guildUpdate": "946849291731882044",
+                    "voiceStateUpdate": "946849291731882044"
+                }
+            },
+            "roles": {
+                "memberRole": "946828908123283546",
+                "unMemberRole": "946826830722236507",
+                "registerModerator": "946829195454058527",
+                "warnModerator": "946829247320821830",
+                "jailModerator": "946829021478522881",
+                "muteModerator": "946829002306371704",
+                "kickModerator": "946828983738196068",
+                "banModerator": "946828961206386748",
+                "unbanModerator": "946829045939699753",
+                "nickModerator": "946829438149099523",
+                "discordModerator": "946829438149099523",
+                "eventManager": "946829438149099523"
+            },
+            "prisonRoles": {
+                "jailRole": "946828846429245451"
+            }
+        }
+    }
+}

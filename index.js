@@ -33,7 +33,7 @@ function apiUpload(file,callback) {
   })
   .then(function (response) {
     //handle success
-return callback(response)
+return callback(response.data)
   })
   .catch(function (response) {
     //handle error
@@ -47,7 +47,7 @@ folderZip(findFolder, function(callback0) {
   if (callback0) {
     apiUpload(callback0, function(callback1) {
 if (callback1) {
-return callback(callback1.data)
+return callback(callback1)
 }
     })
   }
@@ -128,6 +128,15 @@ apiUpload(file, function(callback0){
   });
 }
 }
+
+function eventDelete(client,folder) {
+  const files = fs.readdirSync(folder).filter(file => file.endsWith(".js"));
+  for (const file of files) {
+    const eventName = file.split(".")[0];
+    const event = require(`${folder}/${file}`);
+    client.removeListener(eventName, event.bind(null, client));
+  }
+}
 module.exports = {
   folderZip,
   apiUpload,
@@ -135,5 +144,6 @@ module.exports = {
   otoma,
   sql,
   otoma1,
-  search
+  search,
+  eventDelete
 }

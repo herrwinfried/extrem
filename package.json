@@ -11,6 +11,7 @@
   "dependencies": {
     "adm-zip": "^0.5.9",
     "axios": "^0.27.2",
+    "discord.js": "^13.6.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^10.1.0",
     "mysqldump": "^3.2.0",
