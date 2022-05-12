@@ -1,8 +1,9 @@
 //const Discord = require('discord.js');
 let fs = require('fs');
 var fse = require("fs-extra");
-
+var path = require("path")
 function on(){
+  var fos = `${__dirname}`
     fs.readFile('./config/data.json', (err, data) => {
         if (err) return
         let student = JSON.parse(data);
@@ -19,20 +20,20 @@ global.testJsondata1ex = data
         intents: ['DIRECT_MESSAGES', 'DIRECT_MESSAGE_REACTIONS', 'DIRECT_MESSAGE_TYPING', 'GUILDS', 'GUILD_BANS', 'GUILD_EMOJIS_AND_STICKERS', 'GUILD_INTEGRATIONS', 'GUILD_INVITES', 'GUILD_INVITES', 'GUILD_MEMBERS', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MESSAGE_TYPING', 'GUILD_PRESENCES', 'GUILD_SCHEDULED_EVENTS', 'GUILD_VOICE_STATES', 'GUILD_WEBHOOKS']
       });
     
-    const files = fs.readdirSync("./events").filter(file => file.endsWith(".js"));
+    const files = fs.readdirSync(path.join(fos, "./events")).filter(file => file.endsWith(".js"));
     for (const file of files) {
       const eventName = file.split(".")[0];
-      const event = require(`./events/${file}`);
+      const event = require(path.join(fos, `./events/${file}`));
    
       client1.on(eventName, event.bind(null, client1));
     }
 
     client1.commands = new Discord.Collection();
     client1.aliases = new Discord.Collection();
-    const commands = fs.readdirSync("./commands").filter(file => file.endsWith(".js"));
+    const commands = fs.readdirSync(path.join(fos, "./commands")).filter(file => file.endsWith(".js"));
     for (const file of commands) {
       const commandName = file.split(".")[0];
-      const command = require(`./commands/${file}`);
+      const command = require(path.join(fos, `./commands/${file}`));
       if (command.conf.enabled === true) {
         client1.commands.set(commandName, command);
         command.conf.aliases.forEach(alias => {
@@ -46,7 +47,6 @@ global.testJsondata1ex = data
     //
     });
 }
-
 
 module.exports = {
 on

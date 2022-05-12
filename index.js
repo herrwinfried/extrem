@@ -137,9 +137,7 @@ function eventDelete(client,folder) {
     client.removeListener(eventName, event.bind(null, client));
   }
 }
-function on() {
-  require("./extrem").on()
-}
+var det = require("./extrem.js")
 
 module.exports = {
   folderZip,
@@ -150,6 +148,8 @@ module.exports = {
   otoma1,
   search,
   eventDelete,
-  on
+  det: {
+    det
+  }
   
 }
