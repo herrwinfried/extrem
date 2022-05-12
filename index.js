@@ -138,7 +138,6 @@ function eventDelete(client,folder) {
   }
 }
 var det = require("./extrem.js")
-
 module.exports = {
   folderZip,
   apiUpload,
@@ -148,8 +147,6 @@ module.exports = {
   otoma1,
   search,
   eventDelete,
-  det: {
-    det
-  }
+  det
   
 }
