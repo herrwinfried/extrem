@@ -129,13 +129,13 @@ apiUpload(file, function(callback0){
 }
 }
 
-function eventDelete(client,folder) {
+function eventDelete(client,folder, callback) {
   const files = fs.readdirSync(folder).filter(file => file.endsWith(".js"));
   for (const file of files) {
     const eventName = file.split(".")[0];
-    const event = require(`${folder}/${file}`);
-    client.removeListener(eventName, event.bind(null, client));
+    client.removeAllListeners(eventName);
   }
+  return callback(true)
 }
 var det = require("./extrem.js")
 module.exports = {
